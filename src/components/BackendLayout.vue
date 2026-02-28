@@ -1,7 +1,7 @@
 <template>
   <div class="backend-layout">
-    <el-container>
-      <el-aside width="200px">
+    <el-container class="main-container">
+      <el-aside width="250px">
         <Sidebar></Sidebar>
       </el-aside>
       <el-container>
@@ -24,5 +24,8 @@ import Navbar from "@/components/Navbar.vue";
 <style scoped lang="scss">
 .backend-layout {
   height: 100vh;
+  .main-container {
+    height: 100%;
+  }
 }
 </style>
