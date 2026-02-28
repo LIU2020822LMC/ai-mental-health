@@ -1,18 +1,28 @@
 <template>
-    <div class="header">
-      <h1>AI 心理健康助手</h1>
-    </div>
+  <div class="backend-layout">
+    <el-container>
+      <el-aside width="200px">
+        <Sidebar></Sidebar>
+      </el-aside>
+      <el-container>
+        <el-header>
+          <Navbar></Navbar>
+        </el-header>
+        <el-main>
+          <router-view></router-view>
+        </el-main>
+      </el-container>
+    </el-container>
+  </div>
 </template>
 
 <script setup>
+import Sidebar from "@/components/Sidebar.vue";
+import Navbar from "@/components/Navbar.vue";
 </script>
 
-<style scoped>
-.header {
-  height: 60px;
-  background-color: #af1212ff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+<style scoped lang="scss">
+.backend-layout {
+  height: 100vh;
 }
 </style>
